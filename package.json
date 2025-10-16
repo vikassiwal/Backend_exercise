@@ -1,0 +1,18 @@
+{
+  "name": "product-catalog-api",
+  "version": "1.0.0",
+  "description": "Product Catalog Management API (Express + SQLite)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.5.0",
+    "csv-parse": "^5.5.6",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,8 @@
+sku,name,brand,color,size,mrp,price,quantity
+SKU001,Classic Tee,Acme,Red,M,999,899,10
+SKU002,Slim Jeans,Acme,Blue,32,1999,1499,5
+SKU003,Sports Shoes,RunnerX,Black,9,2999,2799,20
+SKU004,Cotton Shirt,FabWear,White,L,1299,799,0
+SKU005,Hoodie,Acme,Grey,XL,1499,1499,3
+SKU006,Cap,RetailCo,Black,,299,199,50
+SKU007,Socks,RetailCo,White,,199,249,100
