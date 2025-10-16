@@ -95,17 +95,22 @@ sample-products.csv
 
 
 Running Unit Tests
-bash
-npm test
+```bash
+    "npm test"
+   ```
+
+
 Docker Setup
-bash
+
+```bash
 # Build Docker image
-docker build -t product-catalog-api .
+"docker build -t product-catalog-api ."
 
 # Run Docker container
-docker run -p 3000:3000 product-catalog-api
-API testing (curl/Postman) Docker container ke saath bilkul pehle jaise hi hai.
-Agar database ko host machine par persist rakhna hai (optional for advanced usage):
+"docker run -p 3000:3000 product-catalog-" ```
 
-bash
-docker run -p 3000:3000 -v $(pwd)/data:/app/data product-catalog-api
+-API testing (curl/Postman) Docker container ke saath bilkul pehle jaise hi hai.
+-Agar database ko host machine par persist rakhna hai (optional for advanced -usage):
+
+```bash
+"docker run -p 3000:3000 -v $(pwd)/data:/app/data product-catalog-api"
