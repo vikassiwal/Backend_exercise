@@ -1,17 +1,12 @@
 const { getDb } = require('../db');
 
-function insertProducts(products) {
+function insertProduct(product) {
   const db = getDb();
   const insert = db.prepare(`
     INSERT INTO products (sku, name, brand, color, size, mrp, price, quantity)
     VALUES (@sku, @name, @brand, @color, @size, @mrp, @price, @quantity)
   `);
-  const insertMany = db.transaction((rows) => {
-    for (const row of rows) {
-      insert.run(row);
-    }
-  });
-  insertMany(products);
+  insert.run(product);
 }
 
 function listProducts({ page = 1, limit = 10 }) {
@@ -72,7 +67,7 @@ function searchProducts({ brand, color, minPrice, maxPrice, page = 1, limit = 10
 }
 
 module.exports = {
-  insertProducts,
+  insertProduct,
   listProducts,
   searchProducts,
 };
