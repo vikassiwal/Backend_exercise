@@ -55,8 +55,8 @@ sample-products.csv
   - Response:
     ```json
     {
-      "storedCount": 5,
-      "failedCount": 2,
+      "storedCount": 20,
+      "failedCount": 0,
       "stored": [{"index": 0, "sku": "SKU001"}],
       "failed": [{"index": 1, "row": {"sku": "..."}, "errors": ["..."]}]
     }
