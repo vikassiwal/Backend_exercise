@@ -4,7 +4,8 @@
   "description": "Product Catalog Management API (Express + SQLite)",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "csv-parse": "^5.5.6",
     "express": "^4.19.2",
     "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
   }
 }
