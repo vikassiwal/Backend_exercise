@@ -108,7 +108,6 @@ Docker Setup
 
 # Run Docker container
 "docker run -p 3000:3000 product-catalog-" ```
-
 -API testing (curl/Postman) Docker container ke saath bilkul pehle jaise hi hai.
 -Agar database ko host machine par persist rakhna hai (optional for advanced -usage):
 
